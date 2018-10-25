@@ -16,5 +16,9 @@ attr_accessor :sender, :receiver, :status, :amount, :balance
     end
   end
 
+  def execute_transaction
+
+  end
+
 
 end
