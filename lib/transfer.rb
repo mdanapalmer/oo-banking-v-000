@@ -5,6 +5,7 @@ attr_accessor :sender, :receiver, :status, :amount
     @sender = sender
     @receiver = receiver
     @status = 'pending'
-  end  
+    @amount = amount
+  end
 
 end
