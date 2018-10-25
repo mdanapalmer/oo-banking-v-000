@@ -9,7 +9,7 @@ attr_accessor :sender, :receiver, :status, :amount, :balance
   end
 
   def valid?
-    if @sender.balance > 0 && @receiver.balance > 0
+    if @sender.balance > 0 && @receiver.valid?
       true
     else
       false
