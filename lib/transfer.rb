@@ -8,4 +8,13 @@ attr_accessor :sender, :receiver, :status, :amount
     @amount = 50
   end
 
+  def valid? 
+    if status != 'closed' && balance > 0
+      true
+    else
+      false
+    end
+  end
+  
+
 end
