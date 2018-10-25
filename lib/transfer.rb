@@ -1,5 +1,5 @@
 class Transfer
-attr_accessor :sender, :receiver, :status, :amount
+attr_accessor :sender, :receiver, :status, :amount, :balance
 
   def initialize(sender, receiver, status)
     @sender = sender
@@ -9,7 +9,7 @@ attr_accessor :sender, :receiver, :status, :amount
   end
 
   def valid?
-    if 
+    if @sender.balance.valid? && @receiver.balance > 0
       true
     else
       false
