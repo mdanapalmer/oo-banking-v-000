@@ -18,8 +18,8 @@ attr_accessor :sender, :receiver, :status, :amount, :balance
 
   def execute_transaction
     if valid?
-      amount -= @sender
-      amount += @receiver
+      amount - @sender.balance
+      amount + @receiver.balance
       status = 'complete'
     else
       false
