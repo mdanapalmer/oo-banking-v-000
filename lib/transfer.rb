@@ -10,6 +10,7 @@ attr_accessor :sender, :receiver, :status, :amount, :balance
 
   def valid?
     if @sender.valid? && @receiver.valid?
+      @status = 'pending'
       true
     else
       false
