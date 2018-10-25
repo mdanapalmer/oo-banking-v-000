@@ -34,9 +34,9 @@ attr_accessor :sender, :receiver, :status, :amount, :balance
       @status = 'reversed'
     else
       @status = 'rejected'
-      "transaction rejected. Please check your account balance."
+      "Transaction rejected. Please check your account balance."
     end
   end
-  
+
 
 end
