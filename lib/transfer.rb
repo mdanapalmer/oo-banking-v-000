@@ -17,8 +17,8 @@ attr_accessor :sender, :receiver, :status, :amount, :balance
   end
 
   def execute_transaction
+    1.times do
     if valid?
-      1.times do
       @sender.balance -= amount
       @receiver.balance += amount
       @status = 'complete'
